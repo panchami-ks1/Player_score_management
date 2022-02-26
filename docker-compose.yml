@@ -1,9 +1,10 @@
-web:
-  image: panchami34/player-score-app
-  container_name: 'players'
-  command: python manage.py runserver 0.0.0.0:8000
-  volumes:
-    - .:/code
-  ports:
-    - "8000:8000"
-  
+version: '3.1'
+services:
+  web:
+    image: panchami34/player-score-app
+    container_name: 'players'
+    volumes:
+      - .:/code
+    ports:
+      - "8000:8000"
+    

@@ -25,7 +25,7 @@ https://docs.docker.com/compose/install/
 ### 2. Clone the project 
 Clone the repository to the local
 ``` 
-$ git clone 
+$ git clone git@github.com:panchami-ks1/Player_score_management.git
 ```
 cd in to the project directory.
 ### 3. Run the application with docker-compose

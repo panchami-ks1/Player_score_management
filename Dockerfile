@@ -8,3 +8,4 @@ RUN python3 -m venv $VIRTUAL_ENV
 ENV PATH="$VIRTUAL_ENV/bin:$PATH"
 RUN pip install -r requirements.txt
 COPY . /code/
+ENTRYPOINT [ "python","manage.py","runserver","127.0.0.1:8000" ]
